@@ -9,6 +9,23 @@
 import UIKit
 
 var sections = ["Учні", "Вільні слухачі", "Вибули"]
+var students = [
+"Бондар Павло",
+"Вождай Ігор",
+"Демченко Михайло",
+"Запорожець Максим",
+"Ілюшенко Ілля",
+"Nedopaka Alexander",
+"Таченко Дмитро",
+"Гуріненко Валентин"]
+var off = ["Горошнюк Вячеслав",
+           "БЕРЕЗА МАРИНА",]
+var free = ["Пухлій Віталій",
+            "Сагайдак Ілля",
+            "Шурман Андрій",
+            "Лавренко Віталій",
+            "Братчикова Дар'я",
+            "Крістіна",]
 var sectionCount = 0
 
 class ViewController: UIViewController {
@@ -17,13 +34,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "StudentsCells", bundle: nil)
         
-        tableView.register(nib, forCellReuseIdentifier: "StudentsCells")
+        let nib = UINib(nibName: "FreeVisitorsTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "FreeVisitorsTableViewCell")
         tableView.reloadData()
         // Do any additional setup after loading the view.
     }
 }
+
 // MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -33,28 +51,28 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 8
+            return students.count
         case 1:
-            return 5
+            return free.count
         default:
-            return 2
+            return off.count
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        var identifier = "DefaultCell"
-        
-        if (indexPath.section == 0) {
-            identifier = "DefaultCell"
-        } else if (indexPath.section == 1) {
-            identifier = "DefaultCell"
+        switch indexPath.section {
+        case 0:
+            return tableView.dequeueReusableCell(withIdentifier: "Students", for: indexPath)// as! FreeVisitorsTableViewCell
+        case 1:
+            return tableView.dequeueReusableCell(withIdentifier: "FreeVisitorsTableViewCell", for: indexPath)
+        default:
+            return tableView.dequeueReusableCell(withIdentifier: "ExitStudents", for: indexPath)
         }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
-        cell.textLabel?.text = "Index \(indexPath)"
-        return cell
     }
+    
+  //  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        //label for section
+  //  }
 }
 
 // MARK: - UITableViewDelegate
@@ -62,7 +80,7 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 1:
-            sectionCount = 0
+            sectionCount = 1
         case 2:
             sectionCount = 1
         default:

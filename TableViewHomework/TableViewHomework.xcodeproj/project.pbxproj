@@ -13,8 +13,8 @@
 		2372165E2394795D0098691A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2372165C2394795D0098691A /* Main.storyboard */; };
 		237216602394795F0098691A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2372165F2394795F0098691A /* Assets.xcassets */; };
 		237216632394795F0098691A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237216612394795F0098691A /* LaunchScreen.storyboard */; };
-		2372166C239480790098691A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372166A239480790098691A /* CustomTableViewCell.swift */; };
-		2372166D239480790098691A /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2372166B239480790098691A /* CustomTableViewCell.xib */; };
+		237216702395B1330098691A /* FreeVisitorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372166E2395B1330098691A /* FreeVisitorsTableViewCell.swift */; };
+		237216712395B1330098691A /* FreeVisitorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2372166F2395B1330098691A /* FreeVisitorsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		2372165F2394795F0098691A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		237216622394795F0098691A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		237216642394795F0098691A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2372166A239480790098691A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		2372166B239480790098691A /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		2372166E2395B1330098691A /* FreeVisitorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeVisitorsTableViewCell.swift; sourceTree = "<group>"; };
+		2372166F2395B1330098691A /* FreeVisitorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeVisitorsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				237216582394795D0098691A /* SceneDelegate.swift */,
 				2372165A2394795D0098691A /* ViewController.swift */,
 				2372165C2394795D0098691A /* Main.storyboard */,
-				2372166A239480790098691A /* CustomTableViewCell.swift */,
-				2372166B239480790098691A /* CustomTableViewCell.xib */,
+				2372166E2395B1330098691A /* FreeVisitorsTableViewCell.swift */,
+				2372166F2395B1330098691A /* FreeVisitorsTableViewCell.xib */,
 				2372165F2394795F0098691A /* Assets.xcassets */,
 				237216612394795F0098691A /* LaunchScreen.storyboard */,
 				237216642394795F0098691A /* Info.plist */,
@@ -131,9 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237216712395B1330098691A /* FreeVisitorsTableViewCell.xib in Resources */,
 				237216632394795F0098691A /* LaunchScreen.storyboard in Resources */,
 				237216602394795F0098691A /* Assets.xcassets in Resources */,
-				2372166D239480790098691A /* CustomTableViewCell.xib in Resources */,
 				2372165E2394795D0098691A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +147,7 @@
 			files = (
 				2372165B2394795D0098691A /* ViewController.swift in Sources */,
 				237216572394795D0098691A /* AppDelegate.swift in Sources */,
-				2372166C239480790098691A /* CustomTableViewCell.swift in Sources */,
+				237216702395B1330098691A /* FreeVisitorsTableViewCell.swift in Sources */,
 				237216592394795D0098691A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

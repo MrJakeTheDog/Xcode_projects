@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FreeVisitorsTableViewCell" id="KGk-i7-Jjw" customClass="FreeVisitorsTableViewCell" customModule="Демченко_Михайло" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoContrast" translatesAutoresizingMaskIntoConstraints="NO" id="Cys-wo-PwT">
+                        <rect key="frame" x="44" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="MFC-br-UBh"/>
+                            <constraint firstAttribute="width" constant="44" id="tJ9-0T-HFY"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftF-sp-50A">
+                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="WNK-1h-Xu9"/>
+                            <constraint firstAttribute="width" constant="44" id="xvh-lb-dSt"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="shift.fill" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2te-Ic-8D9">
+                        <rect key="frame" x="96" y="12" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6tp-U7-m2a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cys-wo-PwT" firstAttribute="leading" secondItem="ftF-sp-50A" secondAttribute="trailing" id="Bo6-3C-nwP"/>
+                    <constraint firstItem="2te-Ic-8D9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="EIj-pX-nvM"/>
+                    <constraint firstItem="ftF-sp-50A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="O7w-VZ-dUB"/>
+                    <constraint firstItem="ftF-sp-50A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bqD-No-KUi"/>
+                    <constraint firstItem="Cys-wo-PwT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tuN-IK-Jgh"/>
+                    <constraint firstItem="2te-Ic-8D9" firstAttribute="leading" secondItem="Cys-wo-PwT" secondAttribute="trailing" constant="8" id="wQW-ry-DN8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+        </tableViewCell>
+        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xrP-qC-gOB">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="132" y="21"/>
+        </imageView>
+    </objects>
+    <resources>
+        <image name="LogoContrast" width="48" height="48"/>
+        <image name="shift.fill" catalog="system" width="64" height="52"/>
+    </resources>
+</document>

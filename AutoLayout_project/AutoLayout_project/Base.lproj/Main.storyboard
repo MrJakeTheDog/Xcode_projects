@@ -80,31 +80,12 @@
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
                                 <state key="normal" title="Open"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Додано нове місто" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJY-KX-a6N">
-                                <rect key="frame" x="20" y="380" width="137" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Додано пунк налаштування до меню" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glZ-BW-uhQ">
-                                <rect key="frame" x="20" y="363" width="259" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="150" id="IsE-A7-fgL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Додано функціонал відновлення паролю" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d40-Pd-OpT">
-                                <rect key="frame" x="20" y="345" width="284.5" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="150" id="gpS-0z-vRu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzg-aH-CX7">
                                 <rect key="frame" x="358" y="383" width="36" height="30"/>
                                 <state key="normal" title="More"/>
@@ -113,10 +94,17 @@
                                 <rect key="frame" x="358" y="507" width="36" height="30"/>
                                 <state key="normal" title="More"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="- Додано функціонал відновлення паролю - Додано пунк налаштування до меню - Додано нове місто" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffS-qI-FV1">
+                                <rect key="frame" x="20" y="408" width="299" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Dzg-aH-CX7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="glZ-BW-uhQ" secondAttribute="trailing" priority="250" constant="30" id="16E-9f-7e1"/>
                             <constraint firstItem="qjN-Z1-I9D" firstAttribute="top" secondItem="G6u-Qf-Adb" secondAttribute="bottom" constant="17" id="2XE-lb-auM"/>
                             <constraint firstItem="xOP-9E-dbv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Ds-ya-K3S" secondAttribute="trailing" constant="30" id="4Er-Mm-xVP"/>
                             <constraint firstItem="1Ds-ya-K3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4vU-Sl-gxZ"/>
@@ -125,16 +113,13 @@
                             <constraint firstItem="G6u-Qf-Adb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6bH-GY-Cbr"/>
                             <constraint firstItem="FtA-zj-hIr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zrX-AO-HZP" secondAttribute="trailing" constant="50" id="9KR-nI-jYX"/>
                             <constraint firstItem="wXb-0t-WNN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Akq-nL-vte"/>
-                            <constraint firstItem="Dzg-aH-CX7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sJY-KX-a6N" secondAttribute="trailing" priority="250" constant="50" id="BLQ-9W-SNp"/>
                             <constraint firstItem="1O5-9q-hyH" firstAttribute="top" secondItem="wXb-0t-WNN" secondAttribute="bottom" constant="4" id="BWO-dZ-7RH"/>
                             <constraint firstItem="Dzg-aH-CX7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sqR-hy-Rd2" secondAttribute="trailing" constant="50" id="ENg-WV-TId"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1O5-9q-hyH" secondAttribute="trailing" constant="20" id="Mq9-Po-iuK"/>
                             <constraint firstItem="Dzg-aH-CX7" firstAttribute="top" secondItem="FtA-zj-hIr" secondAttribute="bottom" constant="219" id="PLn-9G-fi7"/>
                             <constraint firstItem="xOP-9E-dbv" firstAttribute="top" secondItem="Dzg-aH-CX7" secondAttribute="bottom" constant="94" id="RWm-ZA-ari"/>
-                            <constraint firstItem="d40-Pd-OpT" firstAttribute="top" secondItem="zrX-AO-HZP" secondAttribute="bottom" constant="25" id="S1N-7l-ggN"/>
                             <constraint firstItem="sqR-hy-Rd2" firstAttribute="top" secondItem="G6u-Qf-Adb" secondAttribute="bottom" constant="98" id="VD0-Nz-z36"/>
                             <constraint firstItem="xOP-9E-dbv" firstAttribute="top" secondItem="1Ds-ya-K3S" secondAttribute="bottom" constant="-20" id="VQQ-uQ-Zit"/>
-                            <constraint firstItem="Dzg-aH-CX7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d40-Pd-OpT" secondAttribute="trailing" priority="250" constant="30" id="a1Z-bu-mtY"/>
                             <constraint firstItem="OCM-sj-RLu" firstAttribute="top" secondItem="wXb-0t-WNN" secondAttribute="bottom" constant="43" id="avA-Ta-8QY"/>
                             <constraint firstItem="zrX-AO-HZP" firstAttribute="leading" secondItem="G6u-Qf-Adb" secondAttribute="leading" id="dld-4t-0J6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FtA-zj-hIr" secondAttribute="trailing" constant="20" id="ecG-2r-Xl3"/>
@@ -144,16 +129,11 @@
                             <constraint firstItem="FtA-zj-hIr" firstAttribute="bottom" secondItem="G6u-Qf-Adb" secondAttribute="bottom" id="k20-8x-6GK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OCM-sj-RLu" secondAttribute="trailing" constant="30" id="l1U-fg-Vyz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dzg-aH-CX7" secondAttribute="trailing" constant="20" id="lNK-ig-lxr"/>
-                            <constraint firstItem="d40-Pd-OpT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mLv-GL-9mV"/>
                             <constraint firstItem="zrX-AO-HZP" firstAttribute="top" secondItem="sqR-hy-Rd2" secondAttribute="bottom" constant="8" id="nlC-zY-ySd"/>
                             <constraint firstItem="1O5-9q-hyH" firstAttribute="leading" secondItem="G6u-Qf-Adb" secondAttribute="trailing" constant="24" id="rLz-Lc-Yuf"/>
-                            <constraint firstItem="glZ-BW-uhQ" firstAttribute="top" secondItem="d40-Pd-OpT" secondAttribute="bottom" constant="1" id="rZe-q5-wSk"/>
-                            <constraint firstItem="sJY-KX-a6N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uFN-f4-yIj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xOP-9E-dbv" secondAttribute="trailing" constant="20" id="uJg-US-RsT"/>
-                            <constraint firstItem="glZ-BW-uhQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wYq-hY-puu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wXb-0t-WNN" secondAttribute="trailing" constant="20" id="zEa-ri-Zba"/>
                             <constraint firstItem="sqR-hy-Rd2" firstAttribute="leading" secondItem="G6u-Qf-Adb" secondAttribute="leading" id="zUX-gw-Gbb"/>
-                            <constraint firstItem="sJY-KX-a6N" firstAttribute="top" secondItem="glZ-BW-uhQ" secondAttribute="bottom" id="zrd-fW-PeJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "FreeVisitorsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "FreeVisitorsTableViewCell")
         tableView.reloadData()
-        // Do any additional setup after loading the view.
     }
 }
 
@@ -62,31 +61,67 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            return tableView.dequeueReusableCell(withIdentifier: "Students", for: indexPath)// as! FreeVisitorsTableViewCell
+             let cell = tableView.dequeueReusableCell(withIdentifier: "Students", for: indexPath)// as! ViewController
+             cell.textLabel?.text = "      " + students[indexPath.row]
+            return cell
         case 1:
-            return tableView.dequeueReusableCell(withIdentifier: "FreeVisitorsTableViewCell", for: indexPath)
+             let cell =  tableView.dequeueReusableCell(withIdentifier: "FreeVisitorsTableViewCell", for: indexPath)// !as FreeVisitorsTableViewCell
+             cell.textLabel?.text = "                " + free[indexPath.row]
+            return cell
         default:
-            return tableView.dequeueReusableCell(withIdentifier: "ExitStudents", for: indexPath)
+             let cell = tableView.dequeueReusableCell(withIdentifier: "ExitStudents", for: indexPath)
+             cell.textLabel?.text = "      " + off[indexPath.row]
+            return cell
         }
     }
     
-  //  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        //label for section
-  //  }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        switch section {
+        case 0:
+            let view = UIView()
+            let label = UILabel()
+            label.text=sections[0]
+            view.addSubview(label)
+            label.translatesAutoresizingMaskIntoConstraints = false
+            return view
+            
+        case 1:
+            let view = UIView()
+            let label = UILabel()
+            label.text=sections[1]
+            view.addSubview(label)
+            label.translatesAutoresizingMaskIntoConstraints = false
+            return view
+            
+        default:
+            let view = UIView()
+            let label = UILabel()
+            label.text=sections[2]
+
+            view.addSubview(label)
+            label.translatesAutoresizingMaskIntoConstraints = false
+            return view
+        }
+    }
 }
 
 // MARK: - UITableViewDelegate
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
+        case 0:
+            sectionCount = 0
         case 1:
-            sectionCount = 1
-        case 2:
             sectionCount = 1
         default:
             sectionCount = 2
         }
         return "\(sections[sectionCount])"
-        
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        detailViewController.row = students[indexPath.row]
+    }
+
 }

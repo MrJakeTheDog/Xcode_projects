@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231784A6239D9C7A00677713 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231784A5239D9C7A00677713 /* DetailViewController.swift */; };
 		237216572394795D0098691A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237216562394795D0098691A /* AppDelegate.swift */; };
 		237216592394795D0098691A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237216582394795D0098691A /* SceneDelegate.swift */; };
 		2372165B2394795D0098691A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372165A2394795D0098691A /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231784A5239D9C7A00677713 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		237216532394795D0098691A /* Демченко Михайло.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Демченко Михайло.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		237216562394795D0098691A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		237216582394795D0098691A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				237216582394795D0098691A /* SceneDelegate.swift */,
 				2372165A2394795D0098691A /* ViewController.swift */,
 				2372165C2394795D0098691A /* Main.storyboard */,
+				231784A5239D9C7A00677713 /* DetailViewController.swift */,
 				2372166E2395B1330098691A /* FreeVisitorsTableViewCell.swift */,
 				2372166F2395B1330098691A /* FreeVisitorsTableViewCell.xib */,
 				2372165F2394795F0098691A /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			files = (
 				2372165B2394795D0098691A /* ViewController.swift in Sources */,
 				237216572394795D0098691A /* AppDelegate.swift in Sources */,
+				231784A6239D9C7A00677713 /* DetailViewController.swift in Sources */,
 				237216702395B1330098691A /* FreeVisitorsTableViewCell.swift in Sources */,
 				237216592394795D0098691A /* SceneDelegate.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  DetailEditViewController.swift
 //  TableViewHomework
 //
 //  Created by Mr Jake on 15.12.2019.
@@ -8,14 +8,9 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-
-    var row: String = ""
-
-    @IBOutlet weak var studentName: UILabel!
+class DetailEditViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        studentName.text = row
     }
 }

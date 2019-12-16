@@ -19,22 +19,24 @@ var students = [
 "Таченко Дмитро",
 "Гуріненко Валентин"]
 var off = ["Горошнюк Вячеслав",
-           "БЕРЕЗА МАРИНА",]
+           "БЕРЕЗА МАРИНА"]
 var free = ["Пухлій Віталій",
             "Сагайдак Ілля",
             "Шурман Андрій",
             "Лавренко Віталій",
             "Братчикова Дар'я",
-            "Крістіна",]
+            "Крістіна"]
 var sectionCount = 0
+
+let detailViewController = UIStoryboard(name: "Main", bundle: nil)
+    .instantiateViewController(identifier: "DetailViewController") as! DetailViewController
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let nib = UINib(nibName: "FreeVisitorsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "FreeVisitorsTableViewCell")
         tableView.reloadData()
@@ -46,7 +48,7 @@ extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         3
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
@@ -57,7 +59,7 @@ extension ViewController: UITableViewDataSource {
             return off.count
         }
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
@@ -65,7 +67,7 @@ extension ViewController: UITableViewDataSource {
              cell.textLabel?.text = "      " + students[indexPath.row]
             return cell
         case 1:
-             let cell =  tableView.dequeueReusableCell(withIdentifier: "FreeVisitorsTableViewCell", for: indexPath)// !as FreeVisitorsTableViewCell
+             let cell =  tableView.dequeueReusableCell(withIdentifier: "FreeVisitorsTableViewCell", for: indexPath)
              cell.textLabel?.text = "                " + free[indexPath.row]
             return cell
         default:
@@ -74,34 +76,23 @@ extension ViewController: UITableViewDataSource {
             return cell
         }
     }
-    
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        let label = UILabel()
         switch section {
         case 0:
-            let view = UIView()
-            let label = UILabel()
             label.text=sections[0]
-            view.addSubview(label)
             label.translatesAutoresizingMaskIntoConstraints = false
-            return view
-            
         case 1:
-            let view = UIView()
-            let label = UILabel()
             label.text=sections[1]
-            view.addSubview(label)
             label.translatesAutoresizingMaskIntoConstraints = false
-            return view
-            
         default:
-            let view = UIView()
-            let label = UILabel()
             label.text=sections[2]
-
-            view.addSubview(label)
             label.translatesAutoresizingMaskIntoConstraints = false
-            return view
         }
+        view.addSubview(label)
+        return view
     }
 }
 
@@ -118,10 +109,13 @@ extension ViewController: UITableViewDelegate {
         }
         return "\(sections[sectionCount])"
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "DetailViewController") as! DetailViewController
         detailViewController.row = students[indexPath.row]
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        (segue.destination as? DetailViewController)?.row = detailViewController.row
     }
 
 }

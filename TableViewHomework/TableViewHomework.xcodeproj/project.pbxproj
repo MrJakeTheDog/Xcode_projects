@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		231784A6239D9C7A00677713 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231784A5239D9C7A00677713 /* DetailViewController.swift */; };
 		237216572394795D0098691A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237216562394795D0098691A /* AppDelegate.swift */; };
 		237216592394795D0098691A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237216582394795D0098691A /* SceneDelegate.swift */; };
 		2372165B2394795D0098691A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372165A2394795D0098691A /* ViewController.swift */; };
@@ -16,10 +15,12 @@
 		237216632394795F0098691A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237216612394795F0098691A /* LaunchScreen.storyboard */; };
 		237216702395B1330098691A /* FreeVisitorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372166E2395B1330098691A /* FreeVisitorsTableViewCell.swift */; };
 		237216712395B1330098691A /* FreeVisitorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2372166F2395B1330098691A /* FreeVisitorsTableViewCell.xib */; };
+		2398AE6423A66C9F00BD5C18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398AE6323A66C9F00BD5C18 /* DetailViewController.swift */; };
+		2398AE6623A66E3600BD5C18 /* DetailEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398AE6523A66E3600BD5C18 /* DetailEditViewController.swift */; };
+		2398AE6823A7075600BD5C18 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398AE6723A7075600BD5C18 /* AddStudentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		231784A5239D9C7A00677713 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		237216532394795D0098691A /* Демченко Михайло.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Демченко Михайло.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		237216562394795D0098691A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		237216582394795D0098691A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +31,9 @@
 		237216642394795F0098691A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2372166E2395B1330098691A /* FreeVisitorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeVisitorsTableViewCell.swift; sourceTree = "<group>"; };
 		2372166F2395B1330098691A /* FreeVisitorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeVisitorsTableViewCell.xib; sourceTree = "<group>"; };
+		2398AE6323A66C9F00BD5C18 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2398AE6523A66E3600BD5C18 /* DetailEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditViewController.swift; sourceTree = "<group>"; };
+		2398AE6723A7075600BD5C18 /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,9 @@
 				237216582394795D0098691A /* SceneDelegate.swift */,
 				2372165A2394795D0098691A /* ViewController.swift */,
 				2372165C2394795D0098691A /* Main.storyboard */,
-				231784A5239D9C7A00677713 /* DetailViewController.swift */,
+				2398AE6723A7075600BD5C18 /* AddStudentViewController.swift */,
+				2398AE6523A66E3600BD5C18 /* DetailEditViewController.swift */,
+				2398AE6323A66C9F00BD5C18 /* DetailViewController.swift */,
 				2372166E2395B1330098691A /* FreeVisitorsTableViewCell.swift */,
 				2372166F2395B1330098691A /* FreeVisitorsTableViewCell.xib */,
 				2372165F2394795F0098691A /* Assets.xcassets */,
@@ -86,6 +92,7 @@
 				2372164F2394795D0098691A /* Sources */,
 				237216502394795D0098691A /* Frameworks */,
 				237216512394795D0098691A /* Resources */,
+				2398AE6923A71C0D00BD5C18 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -143,16 +150,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2398AE6923A71C0D00BD5C18 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2372164F2394795D0098691A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2372165B2394795D0098691A /* ViewController.swift in Sources */,
+				2398AE6823A7075600BD5C18 /* AddStudentViewController.swift in Sources */,
 				237216572394795D0098691A /* AppDelegate.swift in Sources */,
-				231784A6239D9C7A00677713 /* DetailViewController.swift in Sources */,
 				237216702395B1330098691A /* FreeVisitorsTableViewCell.swift in Sources */,
+				2398AE6623A66E3600BD5C18 /* DetailEditViewController.swift in Sources */,
 				237216592394795D0098691A /* SceneDelegate.swift in Sources */,
+				2398AE6423A66C9F00BD5C18 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

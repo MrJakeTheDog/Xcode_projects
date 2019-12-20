@@ -8,31 +8,29 @@
 
 import UIKit
 
-var sections = ["Учні", "Вільні слухачі", "Вибули"]
-var students = [
-"Бондар Павло",
-"Вождай Ігор",
-"Демченко Михайло",
-"Запорожець Максим",
-"Ілюшенко Ілля",
-"Nedopaka Alexander",
-"Таченко Дмитро",
-"Гуріненко Валентин"]
-var off = ["Горошнюк Вячеслав",
-           "БЕРЕЗА МАРИНА"]
-var free = ["Пухлій Віталій",
-            "Сагайдак Ілля",
-            "Шурман Андрій",
-            "Лавренко Віталій",
-            "Братчикова Дар'я",
-            "Крістіна"]
-var sectionCount = 0
-
-let detailViewController = UIStoryboard(name: "Main", bundle: nil)
-    .instantiateViewController(identifier: "DetailViewController") as! DetailViewController
-
 class ViewController: UIViewController {
 
+    var sections = ["Учні", "Вільні слухачі", "Вибули"]
+    var students = [
+    "Бондар Павло",
+    "Вождай Ігор",
+    "Демченко Михайло",
+    "Запорожець Максим",
+    "Ілюшенко Ілля",
+    "Nedopaka Alexander",
+    "Таченко Дмитро",
+    "Гуріненко Валентин"]
+    var off = ["Горошнюк Вячеслав",
+               "БЕРЕЗА МАРИНА"]
+    var free = ["Пухлій Віталій",
+                "Сагайдак Ілля",
+                "Шурман Андрій",
+                "Лавренко Віталій",
+                "Братчикова Дар'я",
+                "Крістіна"]
+    var sectionCount = 0
+    var row = ""
+    
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -98,24 +96,11 @@ extension ViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension ViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            sectionCount = 0
-        case 1:
-            sectionCount = 1
-        default:
-            sectionCount = 2
-        }
-        return "\(sections[sectionCount])"
-    }
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        detailViewController.row = students[indexPath.row]
+        row = students[indexPath.row]
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        (segue.destination as? DetailViewController)?.row = detailViewController.row
+        (segue.destination as? DetailViewController)?.row = row
     }
-
 }

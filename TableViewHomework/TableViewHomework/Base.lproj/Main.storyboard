@@ -87,9 +87,6 @@
                                                 <constraint firstItem="ARq-rw-fpX" firstAttribute="leading" secondItem="QeW-h4-ldj" secondAttribute="leading" id="xrQ-0f-ZI8"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Bpg-9U-PfA" kind="show" trigger="accessoryAction" id="K3X-eU-vTr"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -294,9 +291,6 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                 </state>
                             </button>
-                            <connections>
-                                <segue destination="X8w-fd-rF7" kind="show" id="yGX-KP-zLL"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -316,7 +310,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deA-3N-7wW">
-                                <rect key="frame" x="324" y="128" width="50" height="50"/>
+                                <rect key="frame" x="324" y="84" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="AgH-cc-JVP"/>
                                     <constraint firstAttribute="width" constant="50" id="tyV-lw-zVM"/>
@@ -324,7 +318,7 @@
                                 <state key="normal" image="escape" catalog="system"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="POJ-Gt-c5m">
-                                <rect key="frame" x="132" y="253" width="150" height="34"/>
+                                <rect key="frame" x="132" y="209" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Zef-4P-caR"/>
                                 </constraints>
@@ -404,7 +398,4 @@
         <image name="table" catalog="system" width="64" height="46"/>
         <image name="table.fill" catalog="system" width="64" height="46"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="7g2-Cx-OQI"/>
-    </inferredMetricsTieBreakers>
 </document>

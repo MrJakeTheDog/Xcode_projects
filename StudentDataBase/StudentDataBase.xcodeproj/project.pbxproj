@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23C0647323AEBD5F00FF6BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0647223AEBD5F00FF6BEB /* AppDelegate.swift */; };
+		23C0647523AEBD5F00FF6BEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0647423AEBD5F00FF6BEB /* SceneDelegate.swift */; };
+		23C0647723AEBD5F00FF6BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0647623AEBD5F00FF6BEB /* ViewController.swift */; };
+		23C0647A23AEBD5F00FF6BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C0647823AEBD5F00FF6BEB /* Main.storyboard */; };
+		23C0647D23AEBD5F00FF6BEB /* StudentDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23C0647B23AEBD5F00FF6BEB /* StudentDataBase.xcdatamodeld */; };
+		23C0647F23AEBD6800FF6BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C0647E23AEBD6800FF6BEB /* Assets.xcassets */; };
+		23C0648223AEBD6800FF6BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C0648023AEBD6800FF6BEB /* LaunchScreen.storyboard */; };
+		23C0648A23AEC2EB00FF6BEB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0648923AEC2EB00FF6BEB /* CoreDataStack.swift */; };
+		23C0648E23AECEDE00FF6BEB /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0648C23AECEDE00FF6BEB /* Student+CoreDataClass.swift */; };
+		23C0648F23AECEDE00FF6BEB /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0648D23AECEDE00FF6BEB /* Student+CoreDataProperties.swift */; };
+		23C0649623AED38100FF6BEB /* Project+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0649023AED38100FF6BEB /* Project+CoreDataClass.swift */; };
+		23C0649723AED38100FF6BEB /* Project+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0649123AED38100FF6BEB /* Project+CoreDataProperties.swift */; };
+		23C0649823AED38100FF6BEB /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0649223AED38100FF6BEB /* Group+CoreDataClass.swift */; };
+		23C0649923AED38100FF6BEB /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0649323AED38100FF6BEB /* Group+CoreDataProperties.swift */; };
+		23C0649A23AED38100FF6BEB /* Teacher+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0649423AED38100FF6BEB /* Teacher+CoreDataClass.swift */; };
+		23C0649B23AED38100FF6BEB /* Teacher+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C0649523AED38100FF6BEB /* Teacher+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23C0646F23AEBD5F00FF6BEB /* Демченко Михайло.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Демченко Михайло.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C0647223AEBD5F00FF6BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23C0647423AEBD5F00FF6BEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		23C0647623AEBD5F00FF6BEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23C0647923AEBD5F00FF6BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23C0647C23AEBD5F00FF6BEB /* StudentDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentDataBase.xcdatamodel; sourceTree = "<group>"; };
+		23C0647E23AEBD6800FF6BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23C0648123AEBD6800FF6BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23C0648323AEBD6800FF6BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23C0648923AEC2EB00FF6BEB /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		23C0648C23AECEDE00FF6BEB /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23C0648D23AECEDE00FF6BEB /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		23C0649023AED38100FF6BEB /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23C0649123AED38100FF6BEB /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		23C0649223AED38100FF6BEB /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23C0649323AED38100FF6BEB /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		23C0649423AED38100FF6BEB /* Teacher+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teacher+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23C0649523AED38100FF6BEB /* Teacher+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teacher+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23C0646C23AEBD5F00FF6BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23C0646623AEBD5F00FF6BEB = {
+			isa = PBXGroup;
+			children = (
+				23C0647123AEBD5F00FF6BEB /* StudentDataBase */,
+				23C0647023AEBD5F00FF6BEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23C0647023AEBD5F00FF6BEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23C0646F23AEBD5F00FF6BEB /* Демченко Михайло.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23C0647123AEBD5F00FF6BEB /* StudentDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				23C0647223AEBD5F00FF6BEB /* AppDelegate.swift */,
+				23C0647423AEBD5F00FF6BEB /* SceneDelegate.swift */,
+				23C0647623AEBD5F00FF6BEB /* ViewController.swift */,
+				23C0647823AEBD5F00FF6BEB /* Main.storyboard */,
+				23C0647E23AEBD6800FF6BEB /* Assets.xcassets */,
+				23C0648023AEBD6800FF6BEB /* LaunchScreen.storyboard */,
+				23C0648323AEBD6800FF6BEB /* Info.plist */,
+				23C0648B23AEC8A600FF6BEB /* Core Data */,
+			);
+			path = StudentDataBase;
+			sourceTree = "<group>";
+		};
+		23C0648B23AEC8A600FF6BEB /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				23C0649023AED38100FF6BEB /* Project+CoreDataClass.swift */,
+				23C0649123AED38100FF6BEB /* Project+CoreDataProperties.swift */,
+				23C0649223AED38100FF6BEB /* Group+CoreDataClass.swift */,
+				23C0649323AED38100FF6BEB /* Group+CoreDataProperties.swift */,
+				23C0649423AED38100FF6BEB /* Teacher+CoreDataClass.swift */,
+				23C0649523AED38100FF6BEB /* Teacher+CoreDataProperties.swift */,
+				23C0648C23AECEDE00FF6BEB /* Student+CoreDataClass.swift */,
+				23C0648D23AECEDE00FF6BEB /* Student+CoreDataProperties.swift */,
+				23C0647B23AEBD5F00FF6BEB /* StudentDataBase.xcdatamodeld */,
+				23C0648923AEC2EB00FF6BEB /* CoreDataStack.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23C0646E23AEBD5F00FF6BEB /* StudentDataBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23C0648623AEBD6800FF6BEB /* Build configuration list for PBXNativeTarget "StudentDataBase" */;
+			buildPhases = (
+				23C0646B23AEBD5F00FF6BEB /* Sources */,
+				23C0646C23AEBD5F00FF6BEB /* Frameworks */,
+				23C0646D23AEBD5F00FF6BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudentDataBase;
+			productName = StudentDataBase;
+			productReference = 23C0646F23AEBD5F00FF6BEB /* Демченко Михайло.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23C0646723AEBD5F00FF6BEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Mr Jake";
+				TargetAttributes = {
+					23C0646E23AEBD5F00FF6BEB = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 23C0646A23AEBD5F00FF6BEB /* Build configuration list for PBXProject "StudentDataBase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23C0646623AEBD5F00FF6BEB;
+			productRefGroup = 23C0647023AEBD5F00FF6BEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23C0646E23AEBD5F00FF6BEB /* StudentDataBase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23C0646D23AEBD5F00FF6BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C0648223AEBD6800FF6BEB /* LaunchScreen.storyboard in Resources */,
+				23C0647F23AEBD6800FF6BEB /* Assets.xcassets in Resources */,
+				23C0647A23AEBD5F00FF6BEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23C0646B23AEBD5F00FF6BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C0648A23AEC2EB00FF6BEB /* CoreDataStack.swift in Sources */,
+				23C0649623AED38100FF6BEB /* Project+CoreDataClass.swift in Sources */,
+				23C0648E23AECEDE00FF6BEB /* Student+CoreDataClass.swift in Sources */,
+				23C0647D23AEBD5F00FF6BEB /* StudentDataBase.xcdatamodeld in Sources */,
+				23C0647723AEBD5F00FF6BEB /* ViewController.swift in Sources */,
+				23C0649823AED38100FF6BEB /* Group+CoreDataClass.swift in Sources */,
+				23C0647323AEBD5F00FF6BEB /* AppDelegate.swift in Sources */,
+				23C0647523AEBD5F00FF6BEB /* SceneDelegate.swift in Sources */,
+				23C0649723AED38100FF6BEB /* Project+CoreDataProperties.swift in Sources */,
+				23C0649B23AED38100FF6BEB /* Teacher+CoreDataProperties.swift in Sources */,
+				23C0648F23AECEDE00FF6BEB /* Student+CoreDataProperties.swift in Sources */,
+				23C0649A23AED38100FF6BEB /* Teacher+CoreDataClass.swift in Sources */,
+				23C0649923AED38100FF6BEB /* Group+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23C0647823AEBD5F00FF6BEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23C0647923AEBD5F00FF6BEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23C0648023AEBD6800FF6BEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23C0648123AEBD6800FF6BEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23C0648423AEBD6800FF6BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23C0648523AEBD6800FF6BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23C0648723AEBD6800FF6BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudentDataBase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jake-inc.StudentDataBase";
+				PRODUCT_NAME = "Демченко Михайло";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23C0648823AEBD6800FF6BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudentDataBase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jake-inc.StudentDataBase";
+				PRODUCT_NAME = "Демченко Михайло";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23C0646A23AEBD5F00FF6BEB /* Build configuration list for PBXProject "StudentDataBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C0648423AEBD6800FF6BEB /* Debug */,
+				23C0648523AEBD6800FF6BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23C0648623AEBD6800FF6BEB /* Build configuration list for PBXNativeTarget "StudentDataBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23C0648723AEBD6800FF6BEB /* Debug */,
+				23C0648823AEBD6800FF6BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23C0647B23AEBD5F00FF6BEB /* StudentDataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23C0647C23AEBD5F00FF6BEB /* StudentDataBase.xcdatamodel */,
+			);
+			currentVersion = 23C0647C23AEBD5F00FF6BEB /* StudentDataBase.xcdatamodel */;
+			path = StudentDataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 23C0646723AEBD5F00FF6BEB /* Project object */;
+}

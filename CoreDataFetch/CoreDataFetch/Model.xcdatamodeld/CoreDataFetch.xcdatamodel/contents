@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Homework" representedClassName="Homework" syncable="YES">
+        <attribute name="idHomework" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="task" optional="YES" attributeType="String"/>
+        <relationship name="lecture" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lectures" inverseName="homeworks" inverseEntity="Lectures"/>
+        <relationship name="marks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Marks" inverseName="homework" inverseEntity="Marks"/>
+    </entity>
+    <entity name="Lectors" representedClassName="Lectors" syncable="YES">
+        <attribute name="idLector" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+        <relationship name="lectures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lectures" inverseName="lector" inverseEntity="Lectures"/>
+    </entity>
+    <entity name="Lectures" representedClassName="Lectures" syncable="YES">
+        <attribute name="idTheme" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="theme" optional="YES" attributeType="String"/>
+        <relationship name="homeworks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Homework" inverseName="lecture" inverseEntity="Homework"/>
+        <relationship name="lector" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lectors" inverseName="lectures" inverseEntity="Lectors"/>
+    </entity>
+    <entity name="Marks" representedClassName="Marks" syncable="YES">
+        <attribute name="clasification" optional="YES" attributeType="String"/>
+        <attribute name="idMark" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mark" optional="YES" attributeType="String"/>
+        <relationship name="homework" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Homework" inverseName="marks" inverseEntity="Homework"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Students" inverseName="marks" inverseEntity="Students"/>
+    </entity>
+    <entity name="Students" representedClassName="Students" syncable="YES">
+        <attribute name="idStudent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+        <relationship name="marks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Marks" inverseName="student" inverseEntity="Marks"/>
+    </entity>
+    <elements>
+        <element name="Homework" positionX="163.00390625" positionY="-70.4765625" width="128" height="103"/>
+        <element name="Lectors" positionX="-336.5" positionY="-351.359375" width="128" height="103"/>
+        <element name="Lectures" positionX="-56.31640625" positionY="-191.21484375" width="128" height="103"/>
+        <element name="Marks" positionX="-53.7109375" positionY="150.12109375" width="128" height="118"/>
+        <element name="Students" positionX="-376.4921875" positionY="-15.28125" width="128" height="103"/>
+    </elements>
+</model>

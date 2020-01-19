@@ -8,16 +8,11 @@
 
 import UIKit
 
-// MARK: - IJSON Structure
+// MARK: - JSON Structure
 /*
  {
      "name": "Черкасское ГРУ",
-     "state": "Черкасская",
-     "id": "2196",
-     "country": "Украина",
      "city": "Черкассы",
-     "index": "18023",
-     "phone": "8(0472)54-40-80",
      "email": "cs@pbank.com.ua",
      "address": "ул Благовестная 169"
  }
@@ -25,13 +20,8 @@ import UIKit
 
 struct Office: Codable {
     let name: String
-    let state: String
-    let id: String
-    let country: String
     let city: String
-    let index: String
     let phone: String
-    let email: String
     let address: String
 }
 

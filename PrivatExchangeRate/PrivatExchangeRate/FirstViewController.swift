@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - IJSON Structure
+// MARK: - JSON Structure
 /*
  {
      "ccy": "USD",

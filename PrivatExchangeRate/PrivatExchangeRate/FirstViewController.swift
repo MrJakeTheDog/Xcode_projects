@@ -8,42 +8,6 @@
 
 import UIKit
 
-// MARK: - JSON Structure
-/*
- {
-     "ccy": "USD",
-     "base_ccy": "UAH",
-     "buy": "24.05000",
-     "sale": "24.50980"
- }
- */
-
-struct Currency: Codable {
-    let currency: String
-    let baseCurrency: String
-    let buy: Double
-    let sale: Double
-
-    enum CodingKeys: String, CodingKey {
-        case currency = "ccy"
-        case baseCurrency = "base_ccy"
-        case buy
-        case sale
-    }
-
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        let currency = try container.decode(String.self, forKey: .currency)
-        self.currency = String(currency)
-        let baseCurrency = try container.decode(String.self, forKey: .baseCurrency)
-        self.baseCurrency = String(baseCurrency)
-        let buy = try container.decode(String.self, forKey: .buy)
-        self.buy = Double(buy)!
-        let sale = try container.decode(String.self, forKey: .sale)
-        self.sale = Double(sale)!
-    }
-}
-
 class FirstViewController: UIViewController {
 
     // MARK: - IBOutlet Label
@@ -65,17 +29,16 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        createDecode(url: urlString)
+        requestCurrencyExchangeRate(url: urlString)
     }
 
     // MARK: - IBAction refreshDataButton
     @IBAction func refreshDataButton(_ sender: UIBarButtonItem) {
-        createDecode(url: urlString)
-        //fillLabel()
+        requestCurrencyExchangeRate(url: urlString)
     }
 
     // MARK: - Functions
-    private func createDecode(url: String) {
+    private func requestCurrencyExchangeRate(url: String) {
         guard let url = URL(string: url) else { return }
 
         URLSession

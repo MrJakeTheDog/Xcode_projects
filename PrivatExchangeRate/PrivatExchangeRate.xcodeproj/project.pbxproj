@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		236B85F723D512DD005AD254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B85F623D512DD005AD254 /* SceneDelegate.swift */; };
+		236B85FB23D52957005AD254 /* PrivatBankData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B85FA23D52957005AD254 /* PrivatBankData.swift */; };
 		23DE1FD523D323F200843EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE1FD423D323F200843EF4 /* AppDelegate.swift */; };
 		23DE1FD923D323F200843EF4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE1FD823D323F200843EF4 /* FirstViewController.swift */; };
 		23DE1FDB23D323F200843EF4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE1FDA23D323F200843EF4 /* SecondViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		236B85F623D512DD005AD254 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		236B85FA23D52957005AD254 /* PrivatBankData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatBankData.swift; sourceTree = "<group>"; };
 		23DE1FD123D323F200843EF4 /* ДемченкоМихайло.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ДемченкоМихайло.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DE1FD423D323F200843EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23DE1FD823D323F200843EF4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				236B85F623D512DD005AD254 /* SceneDelegate.swift */,
 				23DE1FD823D323F200843EF4 /* FirstViewController.swift */,
 				23DE1FDA23D323F200843EF4 /* SecondViewController.swift */,
+				236B85FA23D52957005AD254 /* PrivatBankData.swift */,
 				23DE1FDC23D323F200843EF4 /* Main.storyboard */,
 				23DE1FDF23D323F900843EF4 /* Assets.xcassets */,
 				23DE1FE123D323F900843EF4 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DE1FDB23D323F200843EF4 /* SecondViewController.swift in Sources */,
+				236B85FB23D52957005AD254 /* PrivatBankData.swift in Sources */,
 				23DE1FD923D323F200843EF4 /* FirstViewController.swift in Sources */,
 				23DE1FD523D323F200843EF4 /* AppDelegate.swift in Sources */,
 				236B85F723D512DD005AD254 /* SceneDelegate.swift in Sources */,

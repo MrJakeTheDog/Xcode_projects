@@ -8,24 +8,6 @@
 
 import UIKit
 
-// MARK: - JSON Structure
-/*
- {
-     "name": "Черкасское ГРУ",
-     "city": "Черкассы",
-     "email": "cs@pbank.com.ua",
-     "address": "ул Благовестная 169"
- }
- */
-
-struct Office: Codable {
-    let name: String
-    let city: String
-    let phone: String
-    let address: String
-}
-
-
 class SecondViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     // MARK: - IBOutlet

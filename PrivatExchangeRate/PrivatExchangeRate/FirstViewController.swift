@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Moya
 
 class FirstViewController: UIViewController {
 
@@ -24,38 +25,40 @@ class FirstViewController: UIViewController {
     var currencyName: [String] = []
     var currencyValueBuy: [String] = []
     var currencyValueSale: [String] = []
+    var currency = [Currency]()
 
     let urlString = "https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11"
+    let provider = MoyaProvider<PrivatAPI>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        requestCurrencyExchangeRate(url: urlString)
+        requestCurrency()
     }
 
     // MARK: - IBAction refreshDataButton
     @IBAction func refreshDataButton(_ sender: UIBarButtonItem) {
-        requestCurrencyExchangeRate(url: urlString)
+        requestCurrency()
     }
 
     // MARK: - Functions
-    private func requestCurrencyExchangeRate(url: String) {
-        guard let url = URL(string: url) else { return }
 
-        URLSession
-            .shared
-            .dataTask(with: url) { (data, response, error) in
-                guard let response = response as? HTTPURLResponse else { return }
-                if let data = data, (200...299).contains(response.statusCode) {
-                    self.handle(responseData: data)
+    private func requestCurrency() {
+        provider.request(.getCurrency ) { rates in
+            do {
+                let response = try rates
+                    .get()
+                self.currency = try response.map([Currency].self)
+                self.handle()
+                DispatchQueue.main.async {
+                    self.fillLabel()
                 }
-                if let _ = data, (300...600).contains(response.statusCode) {
-                    print("IT'S NOT OK!!! ERROR")
-                }
-        }.resume()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 
-    private func handle(responseData: Data) {
-        let currency = try! JSONDecoder().decode([Currency].self, from: responseData)
+    private func handle() {
         currencyName = currency.map { (cur) -> String in
             return cur.currency
         }
@@ -64,9 +67,6 @@ class FirstViewController: UIViewController {
         }
         currencyValueSale = currency.map { (cur) -> String in
             return String(cur.sale)
-        }
-        DispatchQueue.main.async {
-            self.fillLabel()
         }
     }
 

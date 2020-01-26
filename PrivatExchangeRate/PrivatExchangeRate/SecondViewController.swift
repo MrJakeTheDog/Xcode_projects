@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Moya
 
 class SecondViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -19,12 +20,11 @@ class SecondViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     var typeValue = "Черкассы"
     var office = [Office]()
 
+    let provider = MoyaProvider<PrivatAPI>()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.requestOffices(city: self.typeValue)
-        DispatchQueue.main.async {
-            self.officesTableView.reloadData()
-        }
         officesTableView.delegate = self
         officesTableView.dataSource = self
     }
@@ -70,33 +70,18 @@ class SecondViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         }
     }
 
-    // https://api.privatbank.ua/p24api/pboffice?json&city=Черкассы
-    private func requestOffices(city: String) {
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = "api.privatbank.ua"
-        components.path = "/p24api/pboffice"
-        components.queryItems = [URLQueryItem(name: "json", value: nil),
-                                 URLQueryItem(name: "city", value: city)]
-        guard let url = components.url else { return }
-
-        URLSession
-            .shared
-            .dataTask(with: url) { (data, response, error) in
-                guard let response = response as? HTTPURLResponse else { return }
-                if let data = data, (200...299).contains(response.statusCode) {
-                    self.handle(responseData: data)
+    private func requestOffices(city: String?) {
+        provider.request(.getOffices(city: typeValue) ) { rates in
+            do {
+                let response = try rates
+                    .get()
+                self.office = try response.map([Office].self)
+                DispatchQueue.main.async {
+                    self.officesTableView.reloadData()
                 }
-                if let _ = data, (300...700).contains(response.statusCode) {
-                    print("IT'S NOT OK!!! ERROR")
-                }
-        }.resume()
-    }
-
-    private func handle(responseData: Data) {
-        office = try! JSONDecoder().decode([Office].self, from: responseData)
-        DispatchQueue.main.async {
-            self.officesTableView.reloadData()
+            } catch {
+                print(error.localizedDescription)
+            }
         }
     }
 }

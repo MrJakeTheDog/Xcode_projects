@@ -6,9 +6,53 @@
 //  Copyright © 2020 Mr Jake. All rights reserved.
 //
 
-import Foundation
+import Moya
 
-// MARK: - JSON Structure
+// MARK: - API With Moya 
+
+enum PrivatAPI {
+    case getCurrency
+    case getOffices(city: String)
+}
+
+extension PrivatAPI: TargetType {
+
+    var baseURL: URL {
+        URL(string: "https://api.privatbank.ua/p24api/")!
+    }
+
+    var path: String {
+        switch self {
+        case .getCurrency:
+            return "pubinfo"
+        case .getOffices:
+            return "pboffice"
+        }
+    }
+
+    var method: Method {
+        .get
+    }
+
+    var sampleData: Data {
+        Data()
+    }
+
+    var task: Task {
+        switch self {
+        case .getCurrency:
+            return .requestParameters(parameters: ["exchange": "", "json": "", "coursid": "11"], encoding: URLEncoding.queryString)
+        case .getOffices(city: let city):
+            return .requestParameters(parameters: ["json": "", "city": city], encoding: URLEncoding.queryString)
+        }
+    }
+
+    var headers: [String : String]? {
+        return nil
+    }
+}
+
+// MARK: - JSON Currency
 /*
  {
      "ccy": "USD",
@@ -44,6 +88,7 @@ struct Currency: Codable {
     }
 }
 
+// MARK: - JSON Office
 /*
  {
      "name": "Черкасское ГРУ",

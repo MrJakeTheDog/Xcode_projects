@@ -19,16 +19,6 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VTn-QC-vfl">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VTn-QC-vfl" id="PGc-rD-2p4">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -42,7 +32,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="AddLecturesButton" destination="UD0-3s-BVY" id="P56-Hx-2MQ"/>
+                        <outlet property="lecturesTableView" destination="IZ1-rk-L9b" id="b5r-sh-Tgv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -74,12 +64,31 @@
                     <view key="view" contentMode="scaleToFill" id="G6O-c1-3xu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VgB-Sw-5s3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VgB-Sw-5s3" firstAttribute="leading" secondItem="7Gu-TL-mbC" secondAttribute="leading" id="KYg-iV-S6Q"/>
+                            <constraint firstItem="VgB-Sw-5s3" firstAttribute="top" secondItem="7Gu-TL-mbC" secondAttribute="top" id="Kgg-Hg-n6R"/>
+                            <constraint firstItem="7Gu-TL-mbC" firstAttribute="trailing" secondItem="VgB-Sw-5s3" secondAttribute="trailing" id="eB1-gx-wLm"/>
+                            <constraint firstItem="7Gu-TL-mbC" firstAttribute="bottom" secondItem="VgB-Sw-5s3" secondAttribute="bottom" id="mdk-Tw-paL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7Gu-TL-mbC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lectors" id="pwy-0X-dB2">
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="WFp-AC-ATu"/>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="WFp-AC-ATu">
+                            <connections>
+                                <action selector="addLectorAction:" destination="08d-HN-XMe" id="Q9I-gP-HlO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lectorsTableView" destination="VgB-Sw-5s3" id="lif-3s-Md5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtp-dt-f14" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

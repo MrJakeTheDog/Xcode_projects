@@ -7,10 +7,31 @@
 //
 
 import UIKit
+import CoreData
 
 class LecturesViewController: UIViewController {
 
-    @IBOutlet weak var AddLecturesButton: UIBarButtonItem!
+    @IBOutlet weak var lecturesTableView: UITableView!
+    let coreData = CoreDataStack.shared
+    var lectures: Lectures?
+    var counter: Int = 0
+
+    lazy var frc = { () -> NSFetchedResultsController<Lectures> in
+        let context = CoreDataStack.shared.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<Lectures>(entityName: "Lectures")
+
+        // Configure the request's entity, and optionally its predicate
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "idTheme", ascending: true)]
+
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        do {
+            try controller.performFetch()
+        } catch {
+            fatalError("Failed to fetch entities: \(error)")
+        }
+        controller.delegate = self
+        return controller
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,5 +60,33 @@ class LecturesViewController: UIViewController {
         addLecturesAlert.addAction(cancelButton)
 
         present(addLecturesAlert, animated: true, completion: nil)
+    }
+}
+// MARK: - UITableViewDataSource
+extension LecturesViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        frc.sections!.count
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let sections = self.frc.sections else {
+            fatalError("No sections in fetchedResultsController")
+        }
+        let sectionInfo = sections[section]
+        return sectionInfo.numberOfObjects
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        let object = frc.object(at: indexPath)
+        cell.textLabel?.text = object.theme
+        return cell
+    }
+}
+
+extension LecturesViewController: NSFetchedResultsControllerDelegate {
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        lecturesTableView.reloadData()
+        tabBarItem.badgeValue = "\(frc.fetchedObjects?.count ?? -1)"
     }
 }

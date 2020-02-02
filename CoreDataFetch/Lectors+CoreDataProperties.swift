@@ -2,7 +2,7 @@
 //  Lectors+CoreDataProperties.swift
 //  CoreDataFetch
 //
-//  Created by Mr Jake on 13.01.2020.
+//  Created by Mr Jake on 21.01.2020.
 //  Copyright © 2020 Mr Jake. All rights reserved.
 //
 //
@@ -17,7 +17,6 @@ extension Lectors {
         return NSFetchRequest<Lectors>(entityName: "Lectors")
     }
 
-    @NSManaged public var idLector: Int16
     @NSManaged public var name: String?
     @NSManaged public var surname: String?
     @NSManaged public var lectures: NSSet?

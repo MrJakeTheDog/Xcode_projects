@@ -2,7 +2,7 @@
 //  Marks+CoreDataProperties.swift
 //  CoreDataFetch
 //
-//  Created by Mr Jake on 13.01.2020.
+//  Created by Mr Jake on 21.01.2020.
 //  Copyright © 2020 Mr Jake. All rights reserved.
 //
 //
@@ -20,7 +20,7 @@ extension Marks {
     @NSManaged public var clasification: String?
     @NSManaged public var idMark: Int16
     @NSManaged public var mark: String?
-    @NSManaged public var student: Students?
     @NSManaged public var homework: Homework?
+    @NSManaged public var student: Students?
 
 }

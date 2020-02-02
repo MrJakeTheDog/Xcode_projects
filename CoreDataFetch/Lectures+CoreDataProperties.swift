@@ -2,7 +2,7 @@
 //  Lectures+CoreDataProperties.swift
 //  CoreDataFetch
 //
-//  Created by Mr Jake on 13.01.2020.
+//  Created by Mr Jake on 21.01.2020.
 //  Copyright © 2020 Mr Jake. All rights reserved.
 //
 //
@@ -19,8 +19,8 @@ extension Lectures {
 
     @NSManaged public var idTheme: Int16
     @NSManaged public var theme: String?
-    @NSManaged public var lector: Lectors?
     @NSManaged public var homeworks: NSSet?
+    @NSManaged public var lector: Lectors?
 
 }
 

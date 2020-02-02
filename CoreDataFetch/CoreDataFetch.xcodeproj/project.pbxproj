@@ -12,22 +12,23 @@
 		23A7536F23CB8BAB00EE46D8 /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7536E23CB8BAB00EE46D8 /* LecturesViewController.swift */; };
 		23A7537123CB8BCF00EE46D8 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537023CB8BCF00EE46D8 /* HomeworkViewController.swift */; };
 		23A7537323CBC13D00EE46D8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537223CBC13D00EE46D8 /* CoreDataStack.swift */; };
-		23A7537F23CBC6F700EE46D8 /* Students+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537523CBC6F700EE46D8 /* Students+CoreDataClass.swift */; };
-		23A7538023CBC6F700EE46D8 /* Students+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537623CBC6F700EE46D8 /* Students+CoreDataProperties.swift */; };
-		23A7538123CBC6F700EE46D8 /* Homework+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537723CBC6F700EE46D8 /* Homework+CoreDataClass.swift */; };
-		23A7538223CBC6F700EE46D8 /* Homework+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537823CBC6F700EE46D8 /* Homework+CoreDataProperties.swift */; };
-		23A7538323CBC6F700EE46D8 /* Marks+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537923CBC6F700EE46D8 /* Marks+CoreDataClass.swift */; };
-		23A7538423CBC6F700EE46D8 /* Marks+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537A23CBC6F700EE46D8 /* Marks+CoreDataProperties.swift */; };
-		23A7538523CBC6F700EE46D8 /* Lectures+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537B23CBC6F700EE46D8 /* Lectures+CoreDataClass.swift */; };
-		23A7538623CBC6F700EE46D8 /* Lectures+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537C23CBC6F700EE46D8 /* Lectures+CoreDataProperties.swift */; };
-		23A7538723CBC6F700EE46D8 /* Lectors+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537D23CBC6F700EE46D8 /* Lectors+CoreDataClass.swift */; };
-		23A7538823CBC6F700EE46D8 /* Lectors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7537E23CBC6F700EE46D8 /* Lectors+CoreDataProperties.swift */; };
+		23A7538A23CD1B6000EE46D8 /* LecturesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7538923CD1B6000EE46D8 /* LecturesTableViewController.swift */; };
 		23D9CFB023C7BB49008711D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CFAF23C7BB49008711D8 /* AppDelegate.swift */; };
 		23D9CFB223C7BB49008711D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CFB123C7BB49008711D8 /* SceneDelegate.swift */; };
 		23D9CFB923C7BB49008711D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D9CFB723C7BB49008711D8 /* Main.storyboard */; };
 		23D9CFBC23C7BB49008711D8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CFBA23C7BB49008711D8 /* Model.xcdatamodeld */; };
 		23D9CFBE23C7BB50008711D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D9CFBD23C7BB50008711D8 /* Assets.xcassets */; };
 		23D9CFC123C7BB50008711D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D9CFBF23C7BB50008711D8 /* LaunchScreen.storyboard */; };
+		23E6BBD623D7969B00451B9C /* Lectors+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBCC23D7969B00451B9C /* Lectors+CoreDataClass.swift */; };
+		23E6BBD723D7969B00451B9C /* Lectors+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBCD23D7969B00451B9C /* Lectors+CoreDataProperties.swift */; };
+		23E6BBD823D7969B00451B9C /* Marks+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBCE23D7969B00451B9C /* Marks+CoreDataClass.swift */; };
+		23E6BBD923D7969B00451B9C /* Marks+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBCF23D7969B00451B9C /* Marks+CoreDataProperties.swift */; };
+		23E6BBDA23D7969B00451B9C /* Lectures+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBD023D7969B00451B9C /* Lectures+CoreDataClass.swift */; };
+		23E6BBDB23D7969B00451B9C /* Lectures+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBD123D7969B00451B9C /* Lectures+CoreDataProperties.swift */; };
+		23E6BBDC23D7969B00451B9C /* Students+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBD223D7969B00451B9C /* Students+CoreDataClass.swift */; };
+		23E6BBDD23D7969B00451B9C /* Students+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBD323D7969B00451B9C /* Students+CoreDataProperties.swift */; };
+		23E6BBDE23D7969B00451B9C /* Homework+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBD423D7969B00451B9C /* Homework+CoreDataClass.swift */; };
+		23E6BBDF23D7969B00451B9C /* Homework+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E6BBD523D7969B00451B9C /* Homework+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,16 +37,7 @@
 		23A7536E23CB8BAB00EE46D8 /* LecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesViewController.swift; sourceTree = "<group>"; };
 		23A7537023CB8BCF00EE46D8 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
 		23A7537223CBC13D00EE46D8 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		23A7537523CBC6F700EE46D8 /* Students+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537623CBC6F700EE46D8 /* Students+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537723CBC6F700EE46D8 /* Homework+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537823CBC6F700EE46D8 /* Homework+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537923CBC6F700EE46D8 /* Marks+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Marks+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537A23CBC6F700EE46D8 /* Marks+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Marks+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537B23CBC6F700EE46D8 /* Lectures+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lectures+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537C23CBC6F700EE46D8 /* Lectures+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lectures+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537D23CBC6F700EE46D8 /* Lectors+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lectors+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		23A7537E23CBC6F700EE46D8 /* Lectors+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lectors+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		23A7538923CD1B6000EE46D8 /* LecturesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesTableViewController.swift; sourceTree = "<group>"; };
 		23D9CFAC23C7BB49008711D8 /* Демченко Михайло.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Демченко Михайло.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D9CFAF23C7BB49008711D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D9CFB123C7BB49008711D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +46,16 @@
 		23D9CFBD23C7BB50008711D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23D9CFC023C7BB50008711D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23D9CFC223C7BB50008711D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E6BBCC23D7969B00451B9C /* Lectors+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lectors+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBCD23D7969B00451B9C /* Lectors+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lectors+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBCE23D7969B00451B9C /* Marks+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Marks+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBCF23D7969B00451B9C /* Marks+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Marks+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBD023D7969B00451B9C /* Lectures+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lectures+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBD123D7969B00451B9C /* Lectures+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lectures+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBD223D7969B00451B9C /* Students+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBD323D7969B00451B9C /* Students+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBD423D7969B00451B9C /* Homework+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		23E6BBD523D7969B00451B9C /* Homework+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homework+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +72,16 @@
 		23A7537423CBC5E100EE46D8 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				23A7537523CBC6F700EE46D8 /* Students+CoreDataClass.swift */,
-				23A7537623CBC6F700EE46D8 /* Students+CoreDataProperties.swift */,
-				23A7537723CBC6F700EE46D8 /* Homework+CoreDataClass.swift */,
-				23A7537823CBC6F700EE46D8 /* Homework+CoreDataProperties.swift */,
-				23A7537923CBC6F700EE46D8 /* Marks+CoreDataClass.swift */,
-				23A7537A23CBC6F700EE46D8 /* Marks+CoreDataProperties.swift */,
-				23A7537B23CBC6F700EE46D8 /* Lectures+CoreDataClass.swift */,
-				23A7537C23CBC6F700EE46D8 /* Lectures+CoreDataProperties.swift */,
-				23A7537D23CBC6F700EE46D8 /* Lectors+CoreDataClass.swift */,
-				23A7537E23CBC6F700EE46D8 /* Lectors+CoreDataProperties.swift */,
+				23E6BBCC23D7969B00451B9C /* Lectors+CoreDataClass.swift */,
+				23E6BBCD23D7969B00451B9C /* Lectors+CoreDataProperties.swift */,
+				23E6BBCE23D7969B00451B9C /* Marks+CoreDataClass.swift */,
+				23E6BBCF23D7969B00451B9C /* Marks+CoreDataProperties.swift */,
+				23E6BBD023D7969B00451B9C /* Lectures+CoreDataClass.swift */,
+				23E6BBD123D7969B00451B9C /* Lectures+CoreDataProperties.swift */,
+				23E6BBD223D7969B00451B9C /* Students+CoreDataClass.swift */,
+				23E6BBD323D7969B00451B9C /* Students+CoreDataProperties.swift */,
+				23E6BBD423D7969B00451B9C /* Homework+CoreDataClass.swift */,
+				23E6BBD523D7969B00451B9C /* Homework+CoreDataProperties.swift */,
 				23D9CFBA23C7BB49008711D8 /* Model.xcdatamodeld */,
 				23A7537223CBC13D00EE46D8 /* CoreDataStack.swift */,
 			);
@@ -108,6 +110,7 @@
 				23D9CFAF23C7BB49008711D8 /* AppDelegate.swift */,
 				23D9CFB123C7BB49008711D8 /* SceneDelegate.swift */,
 				23A7536E23CB8BAB00EE46D8 /* LecturesViewController.swift */,
+				23A7538923CD1B6000EE46D8 /* LecturesTableViewController.swift */,
 				23A7537023CB8BCF00EE46D8 /* HomeworkViewController.swift */,
 				23A7536A23CB8AB200EE46D8 /* StudentViewController.swift */,
 				23A7536C23CB8ACA00EE46D8 /* LectorsViewController.swift */,
@@ -191,24 +194,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A7537F23CBC6F700EE46D8 /* Students+CoreDataClass.swift in Sources */,
-				23A7538523CBC6F700EE46D8 /* Lectures+CoreDataClass.swift in Sources */,
-				23A7538223CBC6F700EE46D8 /* Homework+CoreDataProperties.swift in Sources */,
-				23A7538323CBC6F700EE46D8 /* Marks+CoreDataClass.swift in Sources */,
-				23A7538123CBC6F700EE46D8 /* Homework+CoreDataClass.swift in Sources */,
 				23A7536B23CB8AB200EE46D8 /* StudentViewController.swift in Sources */,
-				23A7538823CBC6F700EE46D8 /* Lectors+CoreDataProperties.swift in Sources */,
-				23A7538723CBC6F700EE46D8 /* Lectors+CoreDataClass.swift in Sources */,
+				23A7538A23CD1B6000EE46D8 /* LecturesTableViewController.swift in Sources */,
 				23A7536F23CB8BAB00EE46D8 /* LecturesViewController.swift in Sources */,
-				23A7538423CBC6F700EE46D8 /* Marks+CoreDataProperties.swift in Sources */,
+				23E6BBDE23D7969B00451B9C /* Homework+CoreDataClass.swift in Sources */,
 				23A7537123CB8BCF00EE46D8 /* HomeworkViewController.swift in Sources */,
+				23E6BBD623D7969B00451B9C /* Lectors+CoreDataClass.swift in Sources */,
+				23E6BBDC23D7969B00451B9C /* Students+CoreDataClass.swift in Sources */,
+				23E6BBD923D7969B00451B9C /* Marks+CoreDataProperties.swift in Sources */,
 				23D9CFBC23C7BB49008711D8 /* Model.xcdatamodeld in Sources */,
-				23A7538623CBC6F700EE46D8 /* Lectures+CoreDataProperties.swift in Sources */,
 				23A7536D23CB8ACA00EE46D8 /* LectorsViewController.swift in Sources */,
+				23E6BBDA23D7969B00451B9C /* Lectures+CoreDataClass.swift in Sources */,
 				23D9CFB023C7BB49008711D8 /* AppDelegate.swift in Sources */,
+				23E6BBDF23D7969B00451B9C /* Homework+CoreDataProperties.swift in Sources */,
 				23D9CFB223C7BB49008711D8 /* SceneDelegate.swift in Sources */,
 				23A7537323CBC13D00EE46D8 /* CoreDataStack.swift in Sources */,
-				23A7538023CBC6F700EE46D8 /* Students+CoreDataProperties.swift in Sources */,
+				23E6BBD823D7969B00451B9C /* Marks+CoreDataClass.swift in Sources */,
+				23E6BBDB23D7969B00451B9C /* Lectures+CoreDataProperties.swift in Sources */,
+				23E6BBDD23D7969B00451B9C /* Students+CoreDataProperties.swift in Sources */,
+				23E6BBD723D7969B00451B9C /* Lectors+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
